@@ -88,9 +88,9 @@ function myFunction(num) {
     newIncorrectSpan.textContent = inputValue[i];
     document.querySelector(".empty").appendChild(newIncorrectSpan);
   }
-  let newSpan = document.createElement("span");
-  newSpan.textContent = `${rightNum} số đúng và ${rightOrder} vị trí đúng`;
-  document.querySelector(".empty").appendChild(newSpan);
+  let newDiv = document.createElement("div");
+  newDiv.textContent = `${rightNum} số đúng và ${rightOrder} vị trí đúng`;
+  document.querySelector(".empty").appendChild(newDiv);
 
   let breakLine = document.createElement("br");
   document.querySelector(".empty").appendChild(breakLine);
