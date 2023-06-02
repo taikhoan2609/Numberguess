@@ -1,0 +1,136 @@
+/* Remove Arrow in Input box */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  background-color: #d3f9d8;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.box {
+  background-color: rgb(46, 46, 46);
+  border: 1px solid rgb(156, 148, 148);
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  /* padding-left: 15px; */
+}
+
+.button {
+  background-color: #2f9e44;
+  border: 1px solid rgb(156, 148, 148);
+  border-radius: 10px;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.green {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #adb5bd;
+}
+
+.yellow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #adb5bd;
+}
+
+.gray {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #adb5bd;
+}
+
+.answer {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 15px 10px;
+}
+
+/* Modal box */
+
+img {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#modal-box-win,
+#modal-box-lose {
+  /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.win {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 10%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  padding: 25px 0px;
+  border-radius: 10%;
+}
+
+.lose {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 10%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  padding: 25px 0px;
+  border-radius: 10%;
+}
+
+.hidden-win,
+.hidden-lose {
+  display: none;
+}
+
+span {
+  font-size: 20px;
+}
